@@ -1,0 +1,85 @@
+%{
+/* C declarations and functions */
+#define KEYWORD 1
+#define IDENTIFIER 2
+#define CONSTANT 3
+#define STRING 4
+#define PUNC 5
+#define COMMENT 6
+#define ERROR 7
+#define SPACE 8
+#define LINE 9
+int lines =1;
+%}
+
+/* Regular Expressions and Definitions */
+
+KEYWORD					"unsigned"|"break"|"return"|"void"|"case"|"float"|"short"|"char"|"for"|"signed"|"while"|"goto"|"Bool"|"continue"|"if"|"default"|"do"|"int"|"switch"|"double"|"long"|"else"|"Matrix"
+IDENTIFIER    			[a-zA-Z_][a-zA-Z_0-9]*
+SIGN 					[+-]
+ZERO_CONSTANT 			[0]
+INTEGER_CONSTANT 		{SIGN}?[1-9][0-9]*
+DIGIT_SEQUENCE 			{SIGN}?[0-9]+
+EXPONENT_PART			[eE]{SIGN}?{DIGIT_SEQUENCE}
+FRACTIONAL_CONSTANT 	{DIGIT_SEQUENCE}?"."{DIGIT_SEQUENCE}|{DIGIT_SEQUENCE}"."
+FLOATING_CONSTANT 		{FRACTIONAL_CONSTANT}{EXPONENT_PART}?|{DIGIT_SEQUENCE}{EXPONENT_PART}
+ESCAPE_SEQUENCE			("\\'"|"\\\""|"\\?"|"\\\\"|"\\a"|"\\b"|"\\f"|"\\n"|"\\r"|"\\t"|"\\v")
+C_CHAR					[^\'\\\n]|{ESCAPE_SEQUENCE}
+C_CHAR_SEQUENCE			{C_CHAR}+
+CHARACTER_CONSTANT		(\'{C_CHAR_SEQUENCE}\')
+CONSTANT 				{INTEGER_CONSTANT}|{FLOATING_CONSTANT}|{ZERO_CONSTANT}|{CHARACTER_CONSTANT}
+S_CHAR					{C_CHAR}
+S_CHAR_SEQUENCE 		{S_CHAR}+
+STRING_LITERAL			(\"{S_CHAR_SEQUENCE}*?\")
+SQUARE_BRACKETS 		[\[|\]]
+CURLY_BRACKETS 			[\{|\}]
+ROUND_BRACKETS 			[\(|\)]
+BRACKETS 				{SQUARE_BRACKETS}|{CURLY_BRACKETS}|{ROUND_BRACKETS}
+STRUCT_POINTERS 		\-\>
+INCREMENT 				\+\+
+DECREMENT 				\-\-
+SHIFT_LEFT 				\<\<
+SHIFT_RIGHT 			\>\>
+BITWISE_OPERATORS 		[\&|\||\!|\~|\^]|{SHIFT_RIGHT}|{SHIFT_LEFT}
+MATHEMATICAL_OPERATOR   [\+|\-|\/|\%|\*]
+GRT_EQUAL_TO 			\>\=
+LESS_EQUAL_TO			\<\=
+EQUAL_EQUAL 			\=\=
+NOT_EQUAL 				\!\=
+RELATIONAL_OPERATOR 	[\<|\>]|{GRT_EQUAL_TO}|{LESS_EQUAL_TO}|{EQUAL_EQUAL}|{NOT_EQUAL}
+AND 					\&\&
+OR 						\|\|
+LOGICAL_IF 				\?|\:
+LOGICAL_OPERATOR 		{AND}|{OR}|{LOGICAL_IF}
+SHORT_MULT 				\*\=
+SHORT_ADD 				\+\=
+SHORT_DIV 				\/\=
+SHORT_MOD 				\%\=
+SHORT_SUB 				\-\=
+SHORT_SHIFT_LEFT 		\<\<\=
+SHORT_SHIFT_RIGHT 		\>\>\=
+SHORT_LOGIC_AND 		\&\=
+SHORT_LOGIC_OR 		 	\|\=
+SHORT_LOGIC_XOR 		\^\=
+EXT_PUNC 				\.\'|\'
+ASSIGNMEMTS 			[\=]|{SHORT_ADD}|{SHORT_MOD}|{SHORT_DIV}|{SHORT_SUB}|{SHORT_MULT}|{SHORT_LOGIC_XOR}|{SHORT_LOGIC_OR}|{SHORT_LOGIC_AND}|{SHORT_SHIFT_RIGHT}|{SHORT_SHIFT_LEFT}
+EXTRA_PUNCS 			[\,\#\.]|{EXT_PUNC}|\;
+PUNCTUATORS 			{BRACKETS}|{STRUCT_POINTERS}|{INCREMENT}|{DECREMENT}|{BITWISE_OPERATORS}|{MATHEMATICAL_OPERATOR}|{RELATIONAL_OPERATOR}|{LOGICAL_OPERATOR}|{ASSIGNMEMTS}|{EXTRA_PUNCS}
+SINGLE_COMMENT 			\/\/.*
+MULTILINE_COMMENT 		\/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*\/
+COMMENT 			{SINGLE_COMMENT}|{MULTILINE_COMMENT}
+WS			[ \t]
+UNKNOWN		[^\n].
+
+
+%%
+{KEYWORD} 		{ return KEYWORD;}
+{IDENTIFIER}	{return IDENTIFIER;}
+{CONSTANT}		{return CONSTANT;}
+{STRING_LITERAL} {return STRING;}
+{PUNCTUATORS}	{return PUNC;}
+{COMMENT}	{return COMMENT;}
+{WS}	{return SPACE;}
+{UNKNOWN} {return ERROR;}
+\n	{return LINE;}
+%%

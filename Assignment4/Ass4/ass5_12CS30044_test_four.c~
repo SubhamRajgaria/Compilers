@@ -1,0 +1,34 @@
+/* Handles complex array declarations and associated expressions */
+int sum(Matrix arr[15][10], double n);
+void main();
+int sum(Matrix arr[15][10], double n) {
+       int ans = 0, i, j = 4;
+       for(i = 0; i < n; i++) {
+               while(j >= 0) {
+                       if(arr[i][j] > 0)
+                               ans = ans + arr[i][j];
+                       --j;
+               }
+       }
+		Matrix arr2[15][10];
+		Matrix arr3[15][10];
+		Matrix arr4[15][10] = arr+arr3;
+       return ans;
+}
+
+void main() {
+       Matrix a[15][10];
+       int total = 0;
+       int x = 0;
+
+       do {
+               a[0][x] = x;
+               x++;
+       } while(x < 5);
+       
+       Matrix b[10][15] = a.';
+
+       total = sum(a, 10.0);
+
+       return;
+}

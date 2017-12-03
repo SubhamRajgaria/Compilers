@@ -1,0 +1,16 @@
+a.out: lexer.o libass2_15CS10061.a lex.yy.c
+	gcc lexer.o -L. -lass2_15CS10061 lex.yy.c -lfl
+libass2_15CS10061.a: ass2_15CS10061.o
+	ar -rcs libass2_15CS10061.a ass2_15CS10061.o
+ass2_15CS10061.o:	ass2_15CS10061.c myl.h
+	gcc -c ass2_15CS10061.c  
+	
+lexer.o: lex.yy.c lexer.c
+	gcc -c lexer.c
+
+lex.yy.c: ass3_15CS10061.l
+	flex ass3_15CS10061.l
+
+clean:
+	rm a.out lex.yy.c libass2_15CS10061.a ass2_15CS10061.o lexer.o
+

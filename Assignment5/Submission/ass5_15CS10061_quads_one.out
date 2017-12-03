@@ -1,0 +1,119 @@
+  0 : swap : 
+  1 : f = a
+  2 : e = b
+  3 : t0 = * f
+  4 : temp = t0
+  5 : t1 = * e
+  6 : * f = t1
+  7 : * e = temp
+  8 : t2 = * f
+  9 : c = t2
+ 10 : t3 = * e
+ 11 : d = t3
+ 12 : param c
+ 13 : t4 = call printInt, 1
+ 14 : temp = t4
+ 15 : param d
+ 16 : t5 = call printInt, 1
+ 17 : temp = t5
+ 18 : return
+ 19 : no_swap : 
+ 20 : c = a
+ 21 : d = b
+ 22 : temp = c
+ 23 : c = d
+ 24 : d = c
+ 25 : return
+ 26 : main : 
+ 27 : param .LC0
+ 28 : t6 = call printStr, 1
+ 29 : u = t6
+ 30 : t7 = & error
+ 31 : param t7
+ 32 : t8 = call readInt, 1
+ 33 : a = t8
+ 34 : t9 = 0
+ 35 : if error == t9 goto 38
+ 36 : goto 111
+ 37 : goto 117
+ 38 : param .LC1
+ 39 : t10 = call printStr, 1
+ 40 : u = t10
+ 41 : t11 = & error
+ 42 : param t11
+ 43 : t12 = call readInt, 1
+ 44 : b = t12
+ 45 : t13 = 0
+ 46 : if error == t13 goto 49
+ 47 : goto 104
+ 48 : goto 110
+ 49 : param .LC2
+ 50 : t14 = call printStr, 1
+ 51 : u = t14
+ 52 : temp = a
+ 53 : a = b
+ 54 : b = temp
+ 55 : param .LC3
+ 56 : t15 = call printStr, 1
+ 57 : u = t15
+ 58 : param a
+ 59 : t16 = call printInt, 1
+ 60 : u = t16
+ 61 : param .LC4
+ 62 : t17 = call printStr, 1
+ 63 : u = t17
+ 64 : param b
+ 65 : t18 = call printInt, 1
+ 66 : u = t18
+ 67 : param .LC5
+ 68 : t19 = call printStr, 1
+ 69 : u = t19
+ 70 : param .LC6
+ 71 : t20 = call printStr, 1
+ 72 : u = t20
+ 73 : param a
+ 74 : t21 = call printInt, 1
+ 75 : u = t21
+ 76 : param .LC7
+ 77 : t22 = call printStr, 1
+ 78 : u = t22
+ 79 : param b
+ 80 : t23 = call printInt, 1
+ 81 : u = t23
+ 82 : param .LC8
+ 83 : t24 = call printStr, 1
+ 84 : u = t24
+ 85 : param a
+ 86 : param b
+ 87 : call no_swap, 2
+ 88 : param .LC9
+ 89 : t26 = call printStr, 1
+ 90 : u = t26
+ 91 : param a
+ 92 : t27 = call printInt, 1
+ 93 : u = t27
+ 94 : param .LC10
+ 95 : t28 = call printStr, 1
+ 96 : u = t28
+ 97 : param b
+ 98 : t29 = call printInt, 1
+ 99 : u = t29
+100 : param .LC11
+101 : t30 = call printStr, 1
+102 : u = t30
+103 : goto 117
+104 : param .LC12
+105 : t31 = call printStr, 1
+106 : u = t31
+107 : param .LC13
+108 : t32 = call printStr, 1
+109 : u = t32
+110 : goto 117
+111 : param .LC14
+112 : t33 = call printStr, 1
+113 : u = t33
+114 : param .LC15
+115 : t34 = call printStr, 1
+116 : u = t34
+117 : t35 = 0
+118 : return t35

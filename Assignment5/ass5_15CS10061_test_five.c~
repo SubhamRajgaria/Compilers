@@ -1,0 +1,28 @@
+int readInt(int *ep);
+int printInt(int n);
+int printStr(char *str);
+int fib(int n);
+int main();
+int fib(int n){
+	int a,b,k;
+	if(n == 0)
+		k = 0;
+	else if(n == 1)
+		k = 1;
+	else{
+		a = fib(n-1);
+		b = fib(n-2);
+		k = a + b;
+	}
+	return k;
+}
+int main(){
+	int u,n,res;
+	//u = printStr("Enter the number \n");
+	n = readInt(&u);
+	res = fib(n);
+	//u = printStr("Fibonacci output : ");
+	u = printInt(res);
+	//u = printStr("\n");
+	return 0;
+}

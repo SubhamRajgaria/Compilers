@@ -1,0 +1,414 @@
+  0 : swap : 
+  1 : f = a
+  2 : e = b
+  3 : t0 = * f
+  4 : temp = t0
+  5 : t1 = * e
+  6 : * f = t1
+  7 : * e = temp
+  8 : t2 = * f
+  9 : c = t2
+ 10 : t3 = * e
+ 11 : d = t3
+ 12 : param c
+ 13 : t4 = call printInt, 1
+ 14 : temp = t4
+ 15 : param d
+ 16 : t5 = call printInt, 1
+ 17 : temp = t5
+ 18 : return
+ 19 : no_swap : 
+ 20 : c = a
+ 21 : d = b
+ 22 : temp = c
+ 23 : c = d
+ 24 : d = c
+ 25 : return
+ 26 : main : 
+ 27 : param .LC0
+ 28 : t6 = call printStr, 1
+ 29 : u = t6
+ 30 : t7 = & error
+ 31 : param t7
+ 32 : t8 = call readInt, 1
+ 33 : a = t8
+ 34 : t9 = 0
+ 35 : if error == t9 goto 38
+ 36 : goto 111
+ 37 : goto 117
+ 38 : param .LC1
+ 39 : t10 = call printStr, 1
+ 40 : u = t10
+ 41 : t11 = & error
+ 42 : param t11
+ 43 : t12 = call readInt, 1
+ 44 : b = t12
+ 45 : t13 = 0
+ 46 : if error == t13 goto 49
+ 47 : goto 104
+ 48 : goto 110
+ 49 : param .LC2
+ 50 : t14 = call printStr, 1
+ 51 : u = t14
+ 52 : temp = a
+ 53 : a = b
+ 54 : b = temp
+ 55 : param .LC3
+ 56 : t15 = call printStr, 1
+ 57 : u = t15
+ 58 : param a
+ 59 : t16 = call printInt, 1
+ 60 : u = t16
+ 61 : param .LC4
+ 62 : t17 = call printStr, 1
+ 63 : u = t17
+ 64 : param b
+ 65 : t18 = call printInt, 1
+ 66 : u = t18
+ 67 : param .LC5
+ 68 : t19 = call printStr, 1
+ 69 : u = t19
+ 70 : param .LC6
+ 71 : t20 = call printStr, 1
+ 72 : u = t20
+ 73 : param a
+ 74 : t21 = call printInt, 1
+ 75 : u = t21
+ 76 : param .LC7
+ 77 : t22 = call printStr, 1
+ 78 : u = t22
+ 79 : param b
+ 80 : t23 = call printInt, 1
+ 81 : u = t23
+ 82 : param .LC8
+ 83 : t24 = call printStr, 1
+ 84 : u = t24
+ 85 : param a
+ 86 : param b
+ 87 : call no_swap, 2
+ 88 : param .LC9
+ 89 : t26 = call printStr, 1
+ 90 : u = t26
+ 91 : param a
+ 92 : t27 = call printInt, 1
+ 93 : u = t27
+ 94 : param .LC10
+ 95 : t28 = call printStr, 1
+ 96 : u = t28
+ 97 : param b
+ 98 : t29 = call printInt, 1
+ 99 : u = t29
+100 : param .LC11
+101 : t30 = call printStr, 1
+102 : u = t30
+103 : goto 117
+104 : param .LC12
+105 : t31 = call printStr, 1
+106 : u = t31
+107 : param .LC13
+108 : t32 = call printStr, 1
+109 : u = t32
+110 : goto 117
+111 : param .LC14
+112 : t33 = call printStr, 1
+113 : u = t33
+114 : param .LC15
+115 : t34 = call printStr, 1
+116 : u = t34
+117 : t35 = 0
+118 : return t35
+	.section	.rodata
+.LC0:
+	.string	"\nEnter the first number : "
+.LC1:
+	.string	"\nNow Enter the second number : "
+.LC2:
+	.string	"\nInline swapping"
+.LC3:
+	.string	"\na = "
+.LC4:
+	.string	"\nb = "
+.LC5:
+	.string	"\nSwapping through pointers"
+.LC6:
+	.string	"\na = "
+.LC7:
+	.string	"\nb = "
+.LC8:
+	.string	"\nAn attempt to sort through call by value"
+.LC9:
+	.string	"\na = "
+.LC10:
+	.string	"\nb = "
+.LC11:
+	.string	"\nPointers are dangerous!"
+.LC12:
+	.string	"\nYou entered non numeral characters"
+.LC13:
+	.string	"\nThe program is exiting"
+.LC14:
+	.string	"\nYou entered non numeral characters"
+.LC15:
+	.string	"\nThe program is exiting"
+	.text
+	.comm	error,4
+	.globl	swap
+	.type	swap, @function
+swap:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 5
+	subq	$44, %rsp
+	movl	%edi, 16(%rbp)
+	movl	16(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movl	%esi, 20(%rbp)
+	movl	20(%rbp), %eax
+	movl	%eax, -8(%rbp)
+	movl	-4(%rbp), %eax
+	movl	(%eax), %eax
+	movl	%eax, -24(%rbp)
+	movl	-24(%rbp), %eax
+	movl	%eax, -12(%rbp)
+	movl	-8(%rbp), %eax
+	movl	(%eax), %eax
+	movl	%eax, -28(%rbp)
+	movl	-4(%rbp), %eax
+	movl	-28(%rbp), %edx
+	movl	%edx, (%eax)
+	movl	-8(%rbp), %eax
+	movl	-12(%rbp), %edx
+	movl	%edx, (%eax)
+	movl	-4(%rbp), %eax
+	movl	(%eax), %eax
+	movl	%eax, -32(%rbp)
+	movl	-32(%rbp), %eax
+	movl	%eax, -16(%rbp)
+	movl	-8(%rbp), %eax
+	movl	(%eax), %eax
+	movl	%eax, -36(%rbp)
+	movl	-36(%rbp), %eax
+	movl	%eax, -20(%rbp)
+	movq	-16(%rbp), %rdi
+	call	printInt
+	movl	%eax, -40(%rbp)
+	movl	-40(%rbp), %eax
+	movl	%eax, -12(%rbp)
+	movq	-20(%rbp), %rdi
+	call	printInt
+	movl	%eax, -44(%rbp)
+	movl	-44(%rbp), %eax
+	movl	%eax, -12(%rbp)
+	nop
+	leave
+	.cfi_restore 5
+	.cfi_def_cfa 4, 4
+	ret
+	.cfi_endproc
+	.size	swap, .-swap
+	.globl	no_swap
+	.type	no_swap, @function
+no_swap:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 5
+	subq	$12, %rsp
+	movl	%edi, 16(%rbp)
+	movl	16(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movl	%esi, 20(%rbp)
+	movl	20(%rbp), %eax
+	movl	%eax, -8(%rbp)
+	movl	-4(%rbp), %eax
+	movl	%eax, -12(%rbp)
+	movl	-8(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movl	-4(%rbp), %eax
+	movl	%eax, -8(%rbp)
+	nop
+	leave
+	.cfi_restore 5
+	.cfi_def_cfa 4, 4
+	ret
+	.cfi_endproc
+	.size	no_swap, .-no_swap
+	.globl	main
+	.type	main, @function
+main:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 5
+	subq	$132, %rsp
+	movl	$.LC0, %edi
+	call	printStr
+	movl	%eax, -8(%rbp)
+	movl	-8(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	leal	error, %eax
+	movl	%eax, -24(%rbp)
+	movq	-24(%rbp), %rdi
+	call	readInt
+	movl	%eax, -28(%rbp)
+	movl	-28(%rbp), %eax
+	movl	%eax, -12(%rbp)
+	movl	$0, %eax
+	movl	%eax, -32(%rbp)
+	movl	error, %eax
+	cmpl	-32(%rbp), %eax
+	je	.L0
+	jmp	.L1
+	jmp	.L2
+.L0:
+	movl	$.LC1, %edi
+	call	printStr
+	movl	%eax, -36(%rbp)
+	movl	-36(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	leal	error, %eax
+	movl	%eax, -40(%rbp)
+	movq	-40(%rbp), %rdi
+	call	readInt
+	movl	%eax, -44(%rbp)
+	movl	-44(%rbp), %eax
+	movl	%eax, -16(%rbp)
+	movl	$0, %eax
+	movl	%eax, -48(%rbp)
+	movl	error, %eax
+	cmpl	-48(%rbp), %eax
+	je	.L3
+	jmp	.L4
+	jmp	.L5
+.L3:
+	movl	$.LC2, %edi
+	call	printStr
+	movl	%eax, -52(%rbp)
+	movl	-52(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movl	-12(%rbp), %eax
+	movl	%eax, -20(%rbp)
+	movl	-16(%rbp), %eax
+	movl	%eax, -12(%rbp)
+	movl	-20(%rbp), %eax
+	movl	%eax, -16(%rbp)
+	movl	$.LC3, %edi
+	call	printStr
+	movl	%eax, -56(%rbp)
+	movl	-56(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movq	-12(%rbp), %rdi
+	call	printInt
+	movl	%eax, -60(%rbp)
+	movl	-60(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movl	$.LC4, %edi
+	call	printStr
+	movl	%eax, -64(%rbp)
+	movl	-64(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movq	-16(%rbp), %rdi
+	call	printInt
+	movl	%eax, -68(%rbp)
+	movl	-68(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movl	$.LC5, %edi
+	call	printStr
+	movl	%eax, -72(%rbp)
+	movl	-72(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movl	$.LC6, %edi
+	call	printStr
+	movl	%eax, -76(%rbp)
+	movl	-76(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movq	-12(%rbp), %rdi
+	call	printInt
+	movl	%eax, -80(%rbp)
+	movl	-80(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movl	$.LC7, %edi
+	call	printStr
+	movl	%eax, -84(%rbp)
+	movl	-84(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movq	-16(%rbp), %rdi
+	call	printInt
+	movl	%eax, -88(%rbp)
+	movl	-88(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movl	$.LC8, %edi
+	call	printStr
+	movl	%eax, -92(%rbp)
+	movl	-92(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movq	-16(%rbp), %rsi
+	movq	-12(%rbp), %rdi
+	call	no_swap
+	movl	$.LC9, %edi
+	call	printStr
+	movl	%eax, -96(%rbp)
+	movl	-96(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movq	-12(%rbp), %rdi
+	call	printInt
+	movl	%eax, -100(%rbp)
+	movl	-100(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movl	$.LC10, %edi
+	call	printStr
+	movl	%eax, -104(%rbp)
+	movl	-104(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movq	-16(%rbp), %rdi
+	call	printInt
+	movl	%eax, -108(%rbp)
+	movl	-108(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movl	$.LC11, %edi
+	call	printStr
+	movl	%eax, -112(%rbp)
+	movl	-112(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	jmp	.L2
+.L4:
+	movl	$.LC12, %edi
+	call	printStr
+	movl	%eax, -116(%rbp)
+	movl	-116(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movl	$.LC13, %edi
+	call	printStr
+	movl	%eax, -120(%rbp)
+	movl	-120(%rbp), %eax
+	movl	%eax, -4(%rbp)
+.L5:
+	jmp	.L2
+.L1:
+	movl	$.LC14, %edi
+	call	printStr
+	movl	%eax, -124(%rbp)
+	movl	-124(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movl	$.LC15, %edi
+	call	printStr
+	movl	%eax, -128(%rbp)
+	movl	-128(%rbp), %eax
+	movl	%eax, -4(%rbp)
+.L2:
+	movl	$0, %eax
+	movl	%eax, -132(%rbp)
+	movl	-132(%rbp), %eax
+	leave
+	.cfi_restore 5
+	.cfi_def_cfa 4, 4
+	ret
+	.cfi_endproc
+	.size	main, .-main

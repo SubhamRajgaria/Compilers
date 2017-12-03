@@ -1,0 +1,15 @@
+int readInt(int *n);
+int printInt(int c);
+int printStr(char *s);
+int main();
+int main(){
+ int u, n, res;  
+ u = printStr("Enter the number \n");
+ int a;
+ a = 100;
+ n = readInt(&u);
+ u = printInt(n);
+ int *ab;
+ *ab = 5;
+ return 0;
+}

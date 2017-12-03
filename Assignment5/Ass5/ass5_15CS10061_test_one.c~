@@ -1,0 +1,63 @@
+void swap(int *a, int *b);
+void no_swap(int a, int b);
+int main();
+int readi(int *i);
+int printi(int i);
+int prints(char *s);
+int error;
+void swap(int *a, int *b){
+	int temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
+	return;
+}
+void no_swap(int a, int b){
+	int temp;
+	temp = a;
+	a = b;
+	b = a;
+	return;
+}
+int main(){
+	int u;
+	u = prints("\nEnter the first number : ");
+	int a,b,temp;
+	a = readi(&error);
+	if(error == 0){
+		u = prints("\nNow Enter the second number : ");
+		b = readi(&error);
+		if(error == 0){
+			u = prints("\nInline swapping");
+			temp = a;
+			a = b;
+			b = temp;
+			u = prints("\na = ");
+			u = printi(a);
+			u = prints("\nb = ");
+			u = printi(b);
+			u = prints("\nSwapping through pointers");
+			swap(&a,&b);
+			u = prints("\na = ");
+			u = printi(a);
+			u = prints("\nb = ");
+			u = printi(b);
+			u = prints("\nAn attempt to sort through call by value");
+			no_swap(a,b);
+			u = prints("\na = ");
+			u = printi(a);
+			u = prints("\nb = ");
+			u = printi(b);
+			u = prints("\nPointers are dangerous!");
+		}
+		else{
+			u = prints("\nYou entered non numeral characters");
+			u = prints("\nThe program is exiting");
+		}
+	}
+	else{
+		u = prints("\nYou entered non numeral characters");
+		u = prints("\nThe program is exiting");
+	}
+	return 0;
+}

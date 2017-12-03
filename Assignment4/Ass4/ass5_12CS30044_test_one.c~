@@ -1,0 +1,28 @@
+/* Test Matrix declarations, function calls  and nested loops */
+int main();
+int add(int a, double b);
+int add(int a, double b){
+	int c;
+	c = a+b;
+	return c;
+}
+int main(){
+	int z,x,i;
+	double y;
+	Matrix ar1[5][10];
+	Matrix ar2[5][10] = {1.0,2.9,3.5,4.5,5.2;6.3,7.4,8.5,9.2,10.1};
+	Matrix ar4[2][3] = {2.3, 4.4, 5.5; 1.3, 7.7, 8.7};
+	z = add(x,y);
+	ar2[5][5] = ar1[2][3] + z;
+	z = ar2[5][5];
+	Matrix ar3[5][10] = ar2.';
+	for(i=1;i<=z;i++){
+		do{
+			if(z>=5)
+				z--;
+		}while(z<=x);
+		while(z<=5)
+			x++;
+	}
+	return z;
+}

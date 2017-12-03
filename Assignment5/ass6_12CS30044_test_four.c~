@@ -1,0 +1,137 @@
+/*** Sorts three numbers using if else ***/
+int readi(int *ep);
+int printi(int n);
+int prints(char *str);
+void sort(int a, int b, int c);
+void test_equality_a(int a, int b, int c);
+void test_not_equality_b(int a, int b, int c);
+void test_greater_equality_c(int a, int b, int c);
+void test_less_equality_c(int a, int b, int c);
+int main();
+int u;
+void sort(int a, int b, int c){
+	if(a<b && a<c){
+		u = prints("Smallest number is : ");
+		u = printi(a);
+		u = prints("\n");
+		if(c>b){
+			u = prints("Largest number is : ");
+			u = printi(c);
+			u = prints("\n");
+			u = prints("Second Largest number is : ");
+			u = printi(b);
+			u = prints("\n");
+		}
+		else{
+			u = prints("Largest number is : ");
+			u = printi(b);
+			u = prints("\n");
+			u = prints("Second Largest number is : ");
+			u = printi(c);
+			u = prints("\n");
+		}
+	}
+	else if(a>b && c>b){
+		u = prints("Smallest number is : ");
+		u = printi(b);
+		u = prints("\n");
+		if(a<c){
+			u = prints("Largest number is : ");
+			u = printi(c);
+			u = prints("\n");
+			u = prints("Second Largest number is : ");
+			u = printi(a);
+			u = prints("\n");
+		}
+		else{
+			u = prints("Largest number is : ");
+			u = printi(a);
+			u = prints("\n");
+			u = prints("Second Largest number is : ");
+			u = printi(c);
+			u = prints("\n");
+		}
+	}
+	else{
+		u = prints("Smallest number is : ");
+		u = printi(c);
+		u = prints("\n");
+		if(a>b){
+			u = prints("Largest number is : ");
+			u = printi(a);
+			u = prints("\n");
+			u = prints("Second Largest number is : ");
+			u = printi(b);
+			u = prints("\n");
+		}
+		else{
+			u = prints("Largest number is : ");
+			u = printi(b);
+			u = prints("\n");
+			u = prints("Second Largest number is : ");
+			u = printi(a);
+			u = prints("\n");
+		}
+	}
+	return;
+}
+void test_equality_a(int a, int b, int c){
+	if(a == b || a == c){
+		u = printi(a);
+		u = prints(" is equal to ");
+		u = printi(b);
+		u = prints(" or ");
+		u = printi(c);
+		u = prints("\n");
+	}
+	return;
+}
+void test_not_equality_b(int a, int b, int c){
+	if(b != a || b != c){
+		u = printi(b);
+		u = prints(" is not equal to ");
+		u = printi(a);
+		u = prints(" or ");
+		u = printi(c);
+		u = prints("\n");
+	}
+	return;
+}
+void test_greater_equality_c(int a, int b, int c){
+	if(c >= a || c >= b){
+		u = printi(c);
+		u = prints(" is greater than or equal to ");
+		u = printi(a);
+		u = prints(" or ");
+		u = printi(b);
+		u = prints("\n");
+	}
+	return;
+}
+void test_less_equality_c(int a, int b, int c){
+	if(c <= a || c <= b){
+		u = printi(c);
+		u = prints(" is less than or equal to ");
+		u = printi(a);
+		u = prints(" or ");
+		u = printi(b);
+		u = prints("\n");
+	}
+	return;
+}
+int main(){
+	u = prints("Enter the first of the three numbers\n");
+	int a,b,c;
+	a = readi(&u);
+	u = prints("Enter the second number\n");
+	b = readi(&u);
+	u = prints("Enter the third number\n");
+	c = readi(&u);
+	sort(a,b,c);
+	test_equality_a(a,b,c);
+	test_less_equality_c(a,b,c);
+	test_greater_equality_c(a,b,c);
+	test_less_equality_c(a,b,c);
+	test_not_equality_b(a,b,c);
+	return 0;
+}

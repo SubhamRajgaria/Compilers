@@ -1,0 +1,2516 @@
+
+
+
+type-specifier -> void
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+type-specifier -> Matrix
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+decalrator -> pointer_opt direct_declarator
+parameter_declaration -> declaration-specifiers declarator
+parameter_list -> parameter_declaration
+type-specifier -> Matrix
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+decalrator -> pointer_opt direct_declarator
+parameter_declaration -> declaration-specifiers declarator
+parameter_list -> parameter-list parameter_declaration
+type-specifier -> int
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+decalrator -> pointer_opt direct_declarator
+parameter_declaration -> declaration-specifiers declarator
+parameter_list -> parameter-list parameter_declaration
+type-specifier -> int
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+decalrator -> pointer_opt direct_declarator
+parameter_declaration -> declaration-specifiers declarator
+parameter_list -> parameter-list parameter_declaration
+type-specifier -> int
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+decalrator -> pointer_opt direct_declarator
+parameter_declaration -> declaration-specifiers declarator
+parameter_list -> parameter-list parameter_declaration
+parameter_type_list-> parameter-list
+direct_declarator -> direct-declarator(parameter-type-list)
+
+decalrator -> pointer_opt direct_declarator
+declaration-list-optional -> empty
+
+type-specifier -> int
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+decalrator -> pointer_opt direct_declarator
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+init-declarator -> declarator=initializer
+init-declarator-list -> init-declarator
+pointer-optional -> empty
+direct_declarator -> identifier
+decalrator -> pointer_opt direct_declarator
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+init-declarator -> declarator=initializer
+init-declarator-list ->init-declarator-list init-declarator
+pointer-optional -> empty
+direct_declarator -> identifier
+decalrator -> pointer_opt direct_declarator
+init-declarator -> declarator
+init-declarator-list ->init-declarator-list init-declarator
+pointer-optional -> empty
+direct_declarator -> identifier
+decalrator -> pointer_opt direct_declarator
+init-declarator -> declarator
+init-declarator-list ->init-declarator-list init-declarator
+init-declarator-list-optional -> init-declarator-list
+declaration -> declaration-specifiers init-declarator-list-optional
+block-item -> declaration
+block-item-list -> block-item
+
+
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+assignment-operator -> =
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+assignment_expression -> unary_expression assignment_operator assignment-expression
+expression -> assignment-expression
+ expression-optional -> expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> relational-expression < shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+ expression-optional -> expression
+It is an identifier
+postfix-expression -> primary_expression
+postfix-expression++
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+ expression-optional -> expression
+
+
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+assignment-operator -> =
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+assignment_expression -> unary_expression assignment_operator assignment-expression
+expression -> assignment-expression
+ expression-optional -> expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> relational-expression < shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+ expression-optional -> expression
+It is an identifier
+postfix-expression -> primary_expression
+postfix-expression++
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+ expression-optional -> expression
+
+
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> equality_expression != relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> equality_expression != relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression ->logical-and-expression && inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+
+
+It is an identifier
+postfix-expression -> primary_expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+postfix-expression -> postfix_expression[expression]
+It is an identifier
+postfix-expression -> primary_expression
+postfix-expression++
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+postfix-expression -> postfix_expression[expression]
+unary_expression-> postfix_expression
+assignment-operator -> =
+It is an identifier
+postfix-expression -> primary_expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+postfix-expression -> postfix_expression[expression]
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+postfix-expression -> postfix_expression[expression]
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+assignment_expression -> unary_expression assignment_operator assignment-expression
+expression -> assignment-expression
+ expression-optional -> expression
+expression-statement-> expression-optional
+statement -> expression statement
+block-item -> statement
+block-item-list -> block-item
+
+
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> additive-expression - multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> equality_expression == relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+
+
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+assignment-operator -> =
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+assignment_expression -> unary_expression assignment_operator assignment-expression
+expression -> assignment-expression
+ expression-optional -> expression
+expression-statement-> expression-optional
+statement -> expression statement
+block-item -> statement
+block-item-list -> block-item
+
+It is an identifier
+postfix-expression -> primary_expression
+postfix-expression++
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+ expression-optional -> expression
+expression-statement-> expression-optional
+statement -> expression statement
+block-item -> statement
+block-item-list ->block-item-list block-item
+
+block-item-list-optional -> block-item-list
+compound-statement -> {block-item-list-optional}
+statement -> compound statement
+
+expression-statement-> if(expression)statement
+statement -> selection statement
+block-item -> statement
+block-item-list ->block-item-list block-item
+block-item-list-optional -> block-item-list
+compound-statement -> {block-item-list-optional}
+statement -> compound statement
+
+expression-statement-> if(expression)statement
+statement -> selection statement
+block-item -> statement
+block-item-list -> block-item
+block-item-list-optional -> block-item-list
+compound-statement -> {block-item-list-optional}
+statement -> compound statement
+iteration-statement -> for ( expression_optional ;expression_optional;expression_optional)statement
+statement -> iteration statement
+block-item -> statement
+block-item-list -> block-item
+
+block-item-list-optional -> block-item-list
+compound-statement -> {block-item-list-optional}
+statement -> compound statement
+iteration-statement -> for ( expression_optional ;expression_optional;expression_optional)statement
+statement -> iteration statement
+block-item -> statement
+block-item-list ->block-item-list block-item
+
+block-item-list-optional -> block-item-list
+compound-statement -> {block-item-list-optional}
+function-definition -> decalration-specifiers declarator declaration-list-optional compound-statement
+external-declaration-> function-definition
+translation-unit -> external-declaration
+
+
+
+type-specifier -> float
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+type-specifier -> Matrix
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+decalrator -> pointer_opt direct_declarator
+parameter_declaration -> declaration-specifiers declarator
+parameter_list -> parameter_declaration
+type-specifier -> int
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+decalrator -> pointer_opt direct_declarator
+parameter_declaration -> declaration-specifiers declarator
+parameter_list -> parameter-list parameter_declaration
+parameter_type_list-> parameter-list
+direct_declarator -> direct-declarator(parameter-type-list)
+
+decalrator -> pointer_opt direct_declarator
+declaration-list-optional -> empty
+
+type-specifier -> float
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+decalrator -> pointer_opt direct_declarator
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+init-declarator -> declarator=initializer
+init-declarator-list -> init-declarator
+init-declarator-list-optional -> init-declarator-list
+declaration -> declaration-specifiers init-declarator-list-optional
+block-item -> declaration
+block-item-list -> block-item
+
+
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> equality_expression == relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+
+It is an identifier
+postfix-expression -> primary_expression
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+postfix-expression -> postfix_expression[expression]
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+postfix-expression -> postfix_expression[expression]
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+ expression-optional -> expression
+jump-statement -> return expression-optional;
+statement -> jump statement
+
+
+expression-statement-> if(expression)statement
+statement -> selection statement
+block-item -> statement
+block-item-list ->block-item-list block-item
+type-specifier -> Matrix
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+assgn_expr_opt => assgn_expr
+direct_declarator -> direct-declarator[assignment-expression-optional]
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+assgn_expr_opt => assgn_expr
+direct_declarator -> direct-declarator[assignment-expression-optional]
+decalrator -> pointer_opt direct_declarator
+init-declarator -> declarator
+init-declarator-list -> init-declarator
+init-declarator-list-optional -> init-declarator-list
+declaration -> declaration-specifiers init-declarator-list-optional
+block-item -> declaration
+block-item-list ->block-item-list block-item
+
+
+type-specifier -> int
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+decalrator -> pointer_opt direct_declarator
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+init-declarator -> declarator=initializer
+init-declarator-list -> init-declarator
+init-declarator-list-optional -> init-declarator-list
+declaration -> declaration-specifiers init-declarator-list-optional
+block-item -> declaration
+block-item-list ->block-item-list block-item
+
+
+type-specifier -> int
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+decalrator -> pointer_opt direct_declarator
+init-declarator -> declarator
+init-declarator-list -> init-declarator
+init-declarator-list-optional -> init-declarator-list
+declaration -> declaration-specifiers init-declarator-list-optional
+block-item -> declaration
+block-item-list ->block-item-list block-item
+
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+assignment-operator -> =
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+assignment_expression -> unary_expression assignment_operator assignment-expression
+expression -> assignment-expression
+ expression-optional -> expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> relational-expression < shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+ expression-optional -> expression
+It is an identifier
+postfix-expression -> primary_expression
+postfix-expression++
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+ expression-optional -> expression
+
+
+It is an identifier
+postfix-expression -> primary_expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+argument_expression_list-> assignment_expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+argument_expression_list->argument_expression_list   assignment_expression
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+argument_expression_list->argument_expression_list   assignment_expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+argument_expression_list->argument_expression_list   assignment_expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+argument_expression_list->argument_expression_list   assignment_expression
+argument_optional->argument_expression_list
+postfix-expression -> postfix_expression(expression)
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+ expression-optional -> expression
+expression-statement-> expression-optional
+statement -> expression statement
+block-item -> statement
+block-item-list -> block-item
+
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+assignment-operator -> +=
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+It is an identifier
+postfix-expression -> primary_expression
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+postfix-expression -> postfix_expression[expression]
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+postfix-expression -> postfix_expression[expression]
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression ->multiplicative-expression * cast-expression
+It is an identifier
+postfix-expression -> primary_expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+argument_expression_list-> assignment_expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> additive-expression - multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+argument_expression_list->argument_expression_list   assignment_expression
+argument_optional->argument_expression_list
+postfix-expression -> postfix_expression(expression)
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression ->multiplicative-expression * cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+assignment_expression -> unary_expression assignment_operator assignment-expression
+expression -> assignment-expression
+ expression-optional -> expression
+expression-statement-> expression-optional
+statement -> expression statement
+block-item -> statement
+block-item-list ->block-item-list block-item
+
+
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+assignment-operator -> =
+unary_operator -> - 
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+unary_expression-> unary_operator cast_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+assignment_expression -> unary_expression assignment_operator assignment-expression
+expression -> assignment-expression
+ expression-optional -> expression
+expression-statement-> expression-optional
+statement -> expression statement
+block-item -> statement
+block-item-list ->block-item-list block-item
+
+block-item-list-optional -> block-item-list
+compound-statement -> {block-item-list-optional}
+statement -> compound statement
+iteration-statement -> for ( expression_optional ;expression_optional;expression_optional)statement
+statement -> iteration statement
+block-item -> statement
+block-item-list ->block-item-list block-item
+
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+ expression-optional -> expression
+jump-statement -> return expression-optional;
+statement -> jump statement
+block-item -> statement
+block-item-list ->block-item-list block-item
+
+block-item-list-optional -> block-item-list
+compound-statement -> {block-item-list-optional}
+function-definition -> decalration-specifiers declarator declaration-list-optional compound-statement
+external-declaration-> function-definition
+translation-unit -> translation-unit external-declaration
+
+
+
+type-specifier -> void
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+type-specifier -> Matrix
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+decalrator -> pointer_opt direct_declarator
+parameter_declaration -> declaration-specifiers declarator
+parameter_list -> parameter_declaration
+type-specifier -> int
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+decalrator -> pointer_opt direct_declarator
+parameter_declaration -> declaration-specifiers declarator
+parameter_list -> parameter-list parameter_declaration
+type-specifier -> int
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+decalrator -> pointer_opt direct_declarator
+parameter_declaration -> declaration-specifiers declarator
+parameter_list -> parameter-list parameter_declaration
+parameter_type_list-> parameter-list
+direct_declarator -> direct-declarator(parameter-type-list)
+
+decalrator -> pointer_opt direct_declarator
+declaration-list-optional -> empty
+
+type-specifier -> int
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+decalrator -> pointer_opt direct_declarator
+init-declarator -> declarator
+init-declarator-list -> init-declarator
+pointer-optional -> empty
+direct_declarator -> identifier
+decalrator -> pointer_opt direct_declarator
+init-declarator -> declarator
+init-declarator-list ->init-declarator-list init-declarator
+init-declarator-list-optional -> init-declarator-list
+declaration -> declaration-specifiers init-declarator-list-optional
+block-item -> declaration
+block-item-list -> block-item
+
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+assignment-operator -> =
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+assignment_expression -> unary_expression assignment_operator assignment-expression
+expression -> assignment-expression
+ expression-optional -> expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> relational-expression < shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+ expression-optional -> expression
+It is an identifier
+postfix-expression -> primary_expression
+postfix-expression++
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+ expression-optional -> expression
+
+
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+assignment-operator -> =
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+assignment_expression -> unary_expression assignment_operator assignment-expression
+expression -> assignment-expression
+ expression-optional -> expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> relational-expression < shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+ expression-optional -> expression
+It is an identifier
+postfix-expression -> primary_expression
+postfix-expression++
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+ expression-optional -> expression
+
+It is an identifier
+postfix-expression -> primary_expression
+It is an identifier
+postfix-expression -> primary_expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+postfix-expression -> postfix_expression[expression]
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+postfix-expression -> postfix_expression[expression]
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+argument_expression_list-> assignment_expression
+argument_optional->argument_expression_list
+postfix-expression -> postfix_expression(expression)
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+ expression-optional -> expression
+expression-statement-> expression-optional
+statement -> expression statement
+iteration-statement -> for ( expression_optional ;expression_optional;expression_optional)statement
+statement -> iteration statement
+block-item -> statement
+block-item-list -> block-item
+
+It is an identifier
+postfix-expression -> primary_expression
+It is a string literal
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+argument_expression_list-> assignment_expression
+argument_optional->argument_expression_list
+postfix-expression -> postfix_expression(expression)
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+ expression-optional -> expression
+expression-statement-> expression-optional
+statement -> expression statement
+block-item -> statement
+block-item-list ->block-item-list block-item
+
+block-item-list-optional -> block-item-list
+compound-statement -> {block-item-list-optional}
+statement -> compound statement
+iteration-statement -> for ( expression_optional ;expression_optional;expression_optional)statement
+statement -> iteration statement
+block-item -> statement
+block-item-list ->block-item-list block-item
+
+block-item-list-optional -> block-item-list
+compound-statement -> {block-item-list-optional}
+function-definition -> decalration-specifiers declarator declaration-list-optional compound-statement
+external-declaration-> function-definition
+translation-unit -> translation-unit external-declaration
+
+
+type-specifier -> int
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+identifier_list_optional -> empty
+direct_declarator -> direct-declarator(identifier-list-optional)
+
+decalrator -> pointer_opt direct_declarator
+declaration-list-optional -> empty
+
+type-specifier -> Matrix
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+assgn_expr_opt => assgn_expr
+direct_declarator -> direct-declarator[assignment-expression-optional]
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+assgn_expr_opt => assgn_expr
+direct_declarator -> direct-declarator[assignment-expression-optional]
+decalrator -> pointer_opt direct_declarator
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row -> designation-optional initializer
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+designation-optional -> empty
+unary_operator -> - 
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+unary_expression-> unary_operator cast_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+initializer_row_list-> initializer_row
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row -> designation-optional initializer
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+initializer_row_list -> initializer_row_list;initializer-row
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row -> designation-optional initializer
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+designation-optional -> empty
+unary_operator -> - 
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+unary_expression-> unary_operator cast_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+initializer_row_list -> initializer_row_list;initializer-row
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row -> designation-optional initializer
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+initializer_row_list -> initializer_row_list;initializer-row
+initializer -> initializer-row-list
+init-declarator -> declarator=initializer
+init-declarator-list -> init-declarator
+init-declarator-list-optional -> init-declarator-list
+declaration -> declaration-specifiers init-declarator-list-optional
+block-item -> declaration
+block-item-list -> block-item
+
+type-specifier -> Matrix
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+assgn_expr_opt => assgn_expr
+direct_declarator -> direct-declarator[assignment-expression-optional]
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+assgn_expr_opt => assgn_expr
+direct_declarator -> direct-declarator[assignment-expression-optional]
+decalrator -> pointer_opt direct_declarator
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row -> designation-optional initializer
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+designation-optional -> empty
+unary_operator -> - 
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+unary_expression-> unary_operator cast_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+initializer_row_list-> initializer_row
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row -> designation-optional initializer
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+initializer_row_list -> initializer_row_list;initializer-row
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row -> designation-optional initializer
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+designation-optional -> empty
+unary_operator -> - 
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+unary_expression-> unary_operator cast_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+initializer_row_list -> initializer_row_list;initializer-row
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row -> designation-optional initializer
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+designation-optional -> empty
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+initializer -> assignment-expression
+initializer-row ->initializer-row, designation-optional initializer
+initializer_row_list -> initializer_row_list;initializer-row
+initializer -> initializer-row-list
+init-declarator -> declarator=initializer
+init-declarator-list -> init-declarator
+init-declarator-list-optional -> init-declarator-list
+declaration -> declaration-specifiers init-declarator-list-optional
+block-item -> declaration
+block-item-list ->block-item-list block-item
+
+
+type-specifier -> Matrix
+
+declaration_specs => type_spec
+pointer-optional -> empty
+direct_declarator -> identifier
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+assgn_expr_opt => assgn_expr
+direct_declarator -> direct-declarator[assignment-expression-optional]
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+assgn_expr_opt => assgn_expr
+direct_declarator -> direct-declarator[assignment-expression-optional]
+decalrator -> pointer_opt direct_declarator
+init-declarator -> declarator
+init-declarator-list -> init-declarator
+init-declarator-list-optional -> init-declarator-list
+declaration -> declaration-specifiers init-declarator-list-optional
+block-item -> declaration
+block-item-list ->block-item-list block-item
+
+
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+assignment-operator -> =
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression ->multiplicative-expression * cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+assignment_expression -> unary_expression assignment_operator assignment-expression
+expression -> assignment-expression
+ expression-optional -> expression
+expression-statement-> expression-optional
+statement -> expression statement
+block-item -> statement
+block-item-list ->block-item-list block-item
+
+
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+assignment-operator -> =
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> additive-expression + multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+assignment_expression -> unary_expression assignment_operator assignment-expression
+expression -> assignment-expression
+ expression-optional -> expression
+expression-statement-> expression-optional
+statement -> expression statement
+block-item -> statement
+block-item-list ->block-item-list block-item
+
+
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+assignment-operator -> =
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+It is an identifier
+postfix-expression -> primary_expression
+postfix-expression.'
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> additive-expression - multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+assignment_expression -> unary_expression assignment_operator assignment-expression
+expression -> assignment-expression
+ expression-optional -> expression
+expression-statement-> expression-optional
+statement -> expression statement
+block-item -> statement
+block-item-list ->block-item-list block-item
+
+
+It is an identifier
+postfix-expression -> primary_expression
+It is a string literal
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+argument_expression_list-> assignment_expression
+argument_optional->argument_expression_list
+postfix-expression -> postfix_expression(expression)
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+ expression-optional -> expression
+expression-statement-> expression-optional
+statement -> expression statement
+block-item -> statement
+block-item-list ->block-item-list block-item
+
+It is an identifier
+postfix-expression -> primary_expression
+It is an identifier
+postfix-expression -> primary_expression
+It is an identifier
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+argument_expression_list-> assignment_expression
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+argument_expression_list->argument_expression_list   assignment_expression
+argument_optional->argument_expression_list
+postfix-expression -> postfix_expression(expression)
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+argument_expression_list-> assignment_expression
+argument_optional->argument_expression_list
+postfix-expression -> postfix_expression(expression)
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+ expression-optional -> expression
+expression-statement-> expression-optional
+statement -> expression statement
+block-item -> statement
+block-item-list ->block-item-list block-item
+
+It is a constant
+postfix-expression -> primary_expression
+unary_expression-> postfix_expression
+cast_expression -> unary_expression 
+multiplicative-expression -> cast-expression
+additive_expression-> multiplicative_expression
+shift_expression -> additive_expression
+relational_expression -> shift_expression
+equality_expression -> relational_expression
+AND-expression -> equality_expression
+exclusive_or_expression -> AND-expression
+inclusive_or_expression -> exclusive_or_expression
+logical-and-expression -> inclusive_or_expression
+logical-or-expression ->logical-and-expression
+conditional-expression -> logical-or-expression
+assignment_expression_opt -> conditional-expression
+expression -> assignment-expression
+ expression-optional -> expression
+jump-statement -> return expression-optional;
+statement -> jump statement
+block-item -> statement
+block-item-list ->block-item-list block-item
+
+block-item-list-optional -> block-item-list
+compound-statement -> {block-item-list-optional}
+function-definition -> decalration-specifiers declarator declaration-list-optional compound-statement
+external-declaration-> function-definition
+translation-unit -> translation-unit external-declaration
+Parsing successful.

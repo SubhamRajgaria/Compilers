@@ -1,0 +1,11 @@
+int main();
+int compute(int a, int b);
+int compute(int a , int b){
+	int c = a+b;
+	return c;
+}
+int main(){
+	int a = 2;
+	int b = 3;
+	compute(a,b);
+}

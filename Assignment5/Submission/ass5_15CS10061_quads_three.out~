@@ -1,0 +1,1080 @@
+  0 : sort : 
+  1 : d = a
+  2 : e = b
+  3 : f = c
+  4 : if d < e goto 6
+  5 : goto 59
+  6 : if d < f goto 9
+  7 : goto 59
+  8 : goto 163
+  9 : param .LC0
+ 10 : t0 = call printStr, 1
+ 11 : u = t0
+ 12 : param d
+ 13 : t1 = call printInt, 1
+ 14 : u = t1
+ 15 : param .LC1
+ 16 : t2 = call printStr, 1
+ 17 : u = t2
+ 18 : if e > f goto 21
+ 19 : goto 40
+ 20 : goto 58
+ 21 : param .LC2
+ 22 : t3 = call printStr, 1
+ 23 : u = t3
+ 24 : param f
+ 25 : t4 = call printInt, 1
+ 26 : u = t4
+ 27 : param .LC3
+ 28 : t5 = call printStr, 1
+ 29 : u = t5
+ 30 : param .LC4
+ 31 : t6 = call printStr, 1
+ 32 : u = t6
+ 33 : param e
+ 34 : t7 = call printInt, 1
+ 35 : u = t7
+ 36 : param .LC5
+ 37 : t8 = call printStr, 1
+ 38 : u = t8
+ 39 : goto 163
+ 40 : param .LC6
+ 41 : t9 = call printStr, 1
+ 42 : u = t9
+ 43 : param e
+ 44 : t10 = call printInt, 1
+ 45 : u = t10
+ 46 : param .LC7
+ 47 : t11 = call printStr, 1
+ 48 : u = t11
+ 49 : param .LC8
+ 50 : t12 = call printStr, 1
+ 51 : u = t12
+ 52 : param f
+ 53 : t13 = call printInt, 1
+ 54 : u = t13
+ 55 : param .LC9
+ 56 : t14 = call printStr, 1
+ 57 : u = t14
+ 58 : goto 163
+ 59 : if a > b goto 61
+ 60 : goto 114
+ 61 : if c > b goto 64
+ 62 : goto 114
+ 63 : goto 163
+ 64 : param .LC10
+ 65 : t15 = call printStr, 1
+ 66 : u = t15
+ 67 : param e
+ 68 : t16 = call printInt, 1
+ 69 : u = t16
+ 70 : param .LC11
+ 71 : t17 = call printStr, 1
+ 72 : u = t17
+ 73 : if d < f goto 76
+ 74 : goto 95
+ 75 : goto 113
+ 76 : param .LC12
+ 77 : t18 = call printStr, 1
+ 78 : u = t18
+ 79 : param f
+ 80 : t19 = call printInt, 1
+ 81 : u = t19
+ 82 : param .LC13
+ 83 : t20 = call printStr, 1
+ 84 : u = t20
+ 85 : param .LC14
+ 86 : t21 = call printStr, 1
+ 87 : u = t21
+ 88 : param d
+ 89 : t22 = call printInt, 1
+ 90 : u = t22
+ 91 : param .LC15
+ 92 : t23 = call printStr, 1
+ 93 : u = t23
+ 94 : goto 163
+ 95 : param .LC16
+ 96 : t24 = call printStr, 1
+ 97 : u = t24
+ 98 : param d
+ 99 : t25 = call printInt, 1
+100 : u = t25
+101 : param .LC17
+102 : t26 = call printStr, 1
+103 : u = t26
+104 : param .LC18
+105 : t27 = call printStr, 1
+106 : u = t27
+107 : param f
+108 : t28 = call printInt, 1
+109 : u = t28
+110 : param .LC19
+111 : t29 = call printStr, 1
+112 : u = t29
+113 : goto 163
+114 : param .LC20
+115 : t30 = call printStr, 1
+116 : u = t30
+117 : param f
+118 : t31 = call printInt, 1
+119 : u = t31
+120 : param .LC21
+121 : t32 = call printStr, 1
+122 : u = t32
+123 : if a > b goto 126
+124 : goto 145
+125 : goto 163
+126 : param .LC22
+127 : t33 = call printStr, 1
+128 : u = t33
+129 : param d
+130 : t34 = call printInt, 1
+131 : u = t34
+132 : param .LC23
+133 : t35 = call printStr, 1
+134 : u = t35
+135 : param .LC24
+136 : t36 = call printStr, 1
+137 : u = t36
+138 : param e
+139 : t37 = call printInt, 1
+140 : u = t37
+141 : param .LC25
+142 : t38 = call printStr, 1
+143 : u = t38
+144 : goto 163
+145 : param .LC26
+146 : t39 = call printStr, 1
+147 : u = t39
+148 : param e
+149 : t40 = call printInt, 1
+150 : u = t40
+151 : param .LC27
+152 : t41 = call printStr, 1
+153 : u = t41
+154 : param .LC28
+155 : t42 = call printStr, 1
+156 : u = t42
+157 : param d
+158 : t43 = call printInt, 1
+159 : u = t43
+160 : param .LC29
+161 : t44 = call printStr, 1
+162 : u = t44
+163 : return
+164 : test_equality_a : 
+165 : d = a
+166 : e = b
+167 : f = c
+168 : if d == e goto 173
+169 : goto 170
+170 : if d == f goto 173
+171 : goto 192
+172 : goto 192
+173 : param d
+174 : t45 = call printInt, 1
+175 : u = t45
+176 : param .LC30
+177 : t46 = call printStr, 1
+178 : u = t46
+179 : param e
+180 : t47 = call printInt, 1
+181 : u = t47
+182 : param .LC31
+183 : t48 = call printStr, 1
+184 : u = t48
+185 : param f
+186 : t49 = call printInt, 1
+187 : u = t49
+188 : param .LC32
+189 : t50 = call printStr, 1
+190 : u = t50
+191 : goto 192
+192 : return
+193 : test_not_equality_b : 
+194 : d = a
+195 : e = b
+196 : f = c
+197 : if e != d goto 202
+198 : goto 199
+199 : if e != f goto 202
+200 : goto 221
+201 : goto 221
+202 : param e
+203 : t51 = call printInt, 1
+204 : u = t51
+205 : param .LC33
+206 : t52 = call printStr, 1
+207 : u = t52
+208 : param d
+209 : t53 = call printInt, 1
+210 : u = t53
+211 : param .LC34
+212 : t54 = call printStr, 1
+213 : u = t54
+214 : param f
+215 : t55 = call printInt, 1
+216 : u = t55
+217 : param .LC35
+218 : t56 = call printStr, 1
+219 : u = t56
+220 : goto 221
+221 : return
+222 : test_greater_equality_c : 
+223 : d = a
+224 : e = b
+225 : f = c
+226 : if f >= d goto 231
+227 : goto 228
+228 : if d >= e goto 231
+229 : goto 250
+230 : goto 250
+231 : param f
+232 : t57 = call printInt, 1
+233 : u = t57
+234 : param .LC36
+235 : t58 = call printStr, 1
+236 : u = t58
+237 : param d
+238 : t59 = call printInt, 1
+239 : u = t59
+240 : param .LC37
+241 : t60 = call printStr, 1
+242 : u = t60
+243 : param e
+244 : t61 = call printInt, 1
+245 : u = t61
+246 : param .LC38
+247 : t62 = call printStr, 1
+248 : u = t62
+249 : goto 250
+250 : return
+251 : test_less_equality_c : 
+252 : d = a
+253 : e = b
+254 : f = c
+255 : if f <= d goto 260
+256 : goto 257
+257 : if f <= e goto 260
+258 : goto 279
+259 : goto 279
+260 : param f
+261 : t63 = call printInt, 1
+262 : u = t63
+263 : param .LC39
+264 : t64 = call printStr, 1
+265 : u = t64
+266 : param d
+267 : t65 = call printInt, 1
+268 : u = t65
+269 : param .LC40
+270 : t66 = call printStr, 1
+271 : u = t66
+272 : param e
+273 : t67 = call printInt, 1
+274 : u = t67
+275 : param .LC41
+276 : t68 = call printStr, 1
+277 : u = t68
+278 : goto 279
+279 : return
+280 : main : 
+281 : param .LC42
+282 : t69 = call printStr, 1
+283 : u = t69
+284 : t70 = & u
+285 : param t70
+286 : t71 = call readInt, 1
+287 : a = t71
+288 : param .LC43
+289 : t72 = call printStr, 1
+290 : u = t72
+291 : t73 = & u
+292 : param t73
+293 : t74 = call readInt, 1
+294 : b = t74
+295 : param .LC44
+296 : t75 = call printStr, 1
+297 : u = t75
+298 : t76 = & u
+299 : param t76
+300 : t77 = call readInt, 1
+301 : c = t77
+302 : param a
+303 : param b
+304 : param c
+305 : call sort, 3
+306 : param a
+307 : param b
+308 : param c
+309 : call test_equality_a, 3
+310 : param a
+311 : param b
+312 : param c
+313 : call test_less_equality_c, 3
+314 : param a
+315 : param b
+316 : param c
+317 : call test_greater_equality_c, 3
+318 : param a
+319 : param b
+320 : param c
+321 : call test_less_equality_c, 3
+322 : param a
+323 : param b
+324 : param c
+325 : call test_not_equality_b, 3
+326 : t84 = 0
+327 : return t84
+	.section	.rodata
+.LC0:
+	.string	"Smallest number is : "
+.LC1:
+	.string	"\n"
+.LC2:
+	.string	"Largest number is : "
+.LC3:
+	.string	"\n"
+.LC4:
+	.string	"Second Largest number is : "
+.LC5:
+	.string	"\n"
+.LC6:
+	.string	"Largest number is : "
+.LC7:
+	.string	"\n"
+.LC8:
+	.string	"Second Largest number is : "
+.LC9:
+	.string	"\n"
+.LC10:
+	.string	"Smallest number is : "
+.LC11:
+	.string	"\n"
+.LC12:
+	.string	"Largest number is : "
+.LC13:
+	.string	"\n"
+.LC14:
+	.string	"Second Largest number is : "
+.LC15:
+	.string	"\n"
+.LC16:
+	.string	"Largest number is : "
+.LC17:
+	.string	"\n"
+.LC18:
+	.string	"Second Largest number is : "
+.LC19:
+	.string	"\n"
+.LC20:
+	.string	"Smallest number is : "
+.LC21:
+	.string	"\n"
+.LC22:
+	.string	"Largest number is : "
+.LC23:
+	.string	"\n"
+.LC24:
+	.string	"Second Largest number is : "
+.LC25:
+	.string	"\n"
+.LC26:
+	.string	"Largest number is : "
+.LC27:
+	.string	"\n"
+.LC28:
+	.string	"Second Largest number is : "
+.LC29:
+	.string	"\n"
+.LC30:
+	.string	" is equal to "
+.LC31:
+	.string	" or "
+.LC32:
+	.string	"\n"
+.LC33:
+	.string	" is not equal to "
+.LC34:
+	.string	" or "
+.LC35:
+	.string	"\n"
+.LC36:
+	.string	" is greater than or equal to "
+.LC37:
+	.string	" or "
+.LC38:
+	.string	"\n"
+.LC39:
+	.string	" is less than or equal to "
+.LC40:
+	.string	" or "
+.LC41:
+	.string	"\n"
+.LC42:
+	.string	"Enter the first of the three numbers\n"
+.LC43:
+	.string	"Enter the second number\n"
+.LC44:
+	.string	"Enter the third number\n"
+	.text
+	.comm	u,4
+	.globl	sort
+	.type	sort, @function
+sort:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 5
+	subq	$192, %rsp
+	movl	%edi, 16(%rbp)
+	movl	16(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movl	%esi, 20(%rbp)
+	movl	20(%rbp), %eax
+	movl	%eax, -8(%rbp)
+	movl	%edx, 24(%rbp)
+	movl	24(%rbp), %eax
+	movl	%eax, -12(%rbp)
+	movl	-4(%rbp), %eax
+	cmpl	-8(%rbp), %eax
+	jl	.L0
+	jmp	.L1
+.L0:
+	movl	-4(%rbp), %eax
+	cmpl	-12(%rbp), %eax
+	jl	.L2
+	jmp	.L1
+	jmp	.L3
+.L2:
+	movl	$.LC0, %edi
+	call	printStr
+	movl	%eax, -16(%rbp)
+	movl	-16(%rbp), %eax
+	movl	%eax, u
+	movq	-4(%rbp), %rdi
+	call	printInt
+	movl	%eax, -20(%rbp)
+	movl	-20(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC1, %edi
+	call	printStr
+	movl	%eax, -24(%rbp)
+	movl	-24(%rbp), %eax
+	movl	%eax, u
+	movl	-8(%rbp), %eax
+	cmpl	-12(%rbp), %eax
+	jg	.L4
+	jmp	.L5
+	jmp	.L6
+.L4:
+	movl	$.LC2, %edi
+	call	printStr
+	movl	%eax, -28(%rbp)
+	movl	-28(%rbp), %eax
+	movl	%eax, u
+	movq	-12(%rbp), %rdi
+	call	printInt
+	movl	%eax, -32(%rbp)
+	movl	-32(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC3, %edi
+	call	printStr
+	movl	%eax, -36(%rbp)
+	movl	-36(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC4, %edi
+	call	printStr
+	movl	%eax, -40(%rbp)
+	movl	-40(%rbp), %eax
+	movl	%eax, u
+	movq	-8(%rbp), %rdi
+	call	printInt
+	movl	%eax, -44(%rbp)
+	movl	-44(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC5, %edi
+	call	printStr
+	movl	%eax, -48(%rbp)
+	movl	-48(%rbp), %eax
+	movl	%eax, u
+	jmp	.L3
+.L5:
+	movl	$.LC6, %edi
+	call	printStr
+	movl	%eax, -52(%rbp)
+	movl	-52(%rbp), %eax
+	movl	%eax, u
+	movq	-8(%rbp), %rdi
+	call	printInt
+	movl	%eax, -56(%rbp)
+	movl	-56(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC7, %edi
+	call	printStr
+	movl	%eax, -60(%rbp)
+	movl	-60(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC8, %edi
+	call	printStr
+	movl	%eax, -64(%rbp)
+	movl	-64(%rbp), %eax
+	movl	%eax, u
+	movq	-12(%rbp), %rdi
+	call	printInt
+	movl	%eax, -68(%rbp)
+	movl	-68(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC9, %edi
+	call	printStr
+	movl	%eax, -72(%rbp)
+	movl	-72(%rbp), %eax
+	movl	%eax, u
+.L6:
+	jmp	.L3
+.L1:
+	movl	16(%rbp), %eax
+	cmpl	20(%rbp), %eax
+	jg	.L7
+	jmp	.L8
+.L7:
+	movl	24(%rbp), %eax
+	cmpl	20(%rbp), %eax
+	jg	.L9
+	jmp	.L8
+	jmp	.L3
+.L9:
+	movl	$.LC10, %edi
+	call	printStr
+	movl	%eax, -76(%rbp)
+	movl	-76(%rbp), %eax
+	movl	%eax, u
+	movq	-8(%rbp), %rdi
+	call	printInt
+	movl	%eax, -80(%rbp)
+	movl	-80(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC11, %edi
+	call	printStr
+	movl	%eax, -84(%rbp)
+	movl	-84(%rbp), %eax
+	movl	%eax, u
+	movl	-4(%rbp), %eax
+	cmpl	-12(%rbp), %eax
+	jl	.L10
+	jmp	.L11
+	jmp	.L12
+.L10:
+	movl	$.LC12, %edi
+	call	printStr
+	movl	%eax, -88(%rbp)
+	movl	-88(%rbp), %eax
+	movl	%eax, u
+	movq	-12(%rbp), %rdi
+	call	printInt
+	movl	%eax, -92(%rbp)
+	movl	-92(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC13, %edi
+	call	printStr
+	movl	%eax, -96(%rbp)
+	movl	-96(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC14, %edi
+	call	printStr
+	movl	%eax, -100(%rbp)
+	movl	-100(%rbp), %eax
+	movl	%eax, u
+	movq	-4(%rbp), %rdi
+	call	printInt
+	movl	%eax, -104(%rbp)
+	movl	-104(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC15, %edi
+	call	printStr
+	movl	%eax, -108(%rbp)
+	movl	-108(%rbp), %eax
+	movl	%eax, u
+	jmp	.L3
+.L11:
+	movl	$.LC16, %edi
+	call	printStr
+	movl	%eax, -112(%rbp)
+	movl	-112(%rbp), %eax
+	movl	%eax, u
+	movq	-4(%rbp), %rdi
+	call	printInt
+	movl	%eax, -116(%rbp)
+	movl	-116(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC17, %edi
+	call	printStr
+	movl	%eax, -120(%rbp)
+	movl	-120(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC18, %edi
+	call	printStr
+	movl	%eax, -124(%rbp)
+	movl	-124(%rbp), %eax
+	movl	%eax, u
+	movq	-12(%rbp), %rdi
+	call	printInt
+	movl	%eax, -128(%rbp)
+	movl	-128(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC19, %edi
+	call	printStr
+	movl	%eax, -132(%rbp)
+	movl	-132(%rbp), %eax
+	movl	%eax, u
+.L12:
+	jmp	.L3
+.L8:
+	movl	$.LC20, %edi
+	call	printStr
+	movl	%eax, -136(%rbp)
+	movl	-136(%rbp), %eax
+	movl	%eax, u
+	movq	-12(%rbp), %rdi
+	call	printInt
+	movl	%eax, -140(%rbp)
+	movl	-140(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC21, %edi
+	call	printStr
+	movl	%eax, -144(%rbp)
+	movl	-144(%rbp), %eax
+	movl	%eax, u
+	movl	16(%rbp), %eax
+	cmpl	20(%rbp), %eax
+	jg	.L13
+	jmp	.L14
+	jmp	.L3
+.L13:
+	movl	$.LC22, %edi
+	call	printStr
+	movl	%eax, -148(%rbp)
+	movl	-148(%rbp), %eax
+	movl	%eax, u
+	movq	-4(%rbp), %rdi
+	call	printInt
+	movl	%eax, -152(%rbp)
+	movl	-152(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC23, %edi
+	call	printStr
+	movl	%eax, -156(%rbp)
+	movl	-156(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC24, %edi
+	call	printStr
+	movl	%eax, -160(%rbp)
+	movl	-160(%rbp), %eax
+	movl	%eax, u
+	movq	-8(%rbp), %rdi
+	call	printInt
+	movl	%eax, -164(%rbp)
+	movl	-164(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC25, %edi
+	call	printStr
+	movl	%eax, -168(%rbp)
+	movl	-168(%rbp), %eax
+	movl	%eax, u
+	jmp	.L3
+.L14:
+	movl	$.LC26, %edi
+	call	printStr
+	movl	%eax, -172(%rbp)
+	movl	-172(%rbp), %eax
+	movl	%eax, u
+	movq	-8(%rbp), %rdi
+	call	printInt
+	movl	%eax, -176(%rbp)
+	movl	-176(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC27, %edi
+	call	printStr
+	movl	%eax, -180(%rbp)
+	movl	-180(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC28, %edi
+	call	printStr
+	movl	%eax, -184(%rbp)
+	movl	-184(%rbp), %eax
+	movl	%eax, u
+	movq	-4(%rbp), %rdi
+	call	printInt
+	movl	%eax, -188(%rbp)
+	movl	-188(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC29, %edi
+	call	printStr
+	movl	%eax, -192(%rbp)
+	movl	-192(%rbp), %eax
+	movl	%eax, u
+.L3:
+	nop
+	leave
+	.cfi_restore 5
+	.cfi_def_cfa 4, 4
+	ret
+	.cfi_endproc
+	.size	sort, .-sort
+	.globl	test_equality_a
+	.type	test_equality_a, @function
+test_equality_a:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 5
+	subq	$36, %rsp
+	movl	%edi, 16(%rbp)
+	movl	16(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movl	%esi, 20(%rbp)
+	movl	20(%rbp), %eax
+	movl	%eax, -8(%rbp)
+	movl	%edx, 24(%rbp)
+	movl	24(%rbp), %eax
+	movl	%eax, -12(%rbp)
+	movl	-4(%rbp), %eax
+	cmpl	-8(%rbp), %eax
+	je	.L15
+	jmp	.L16
+.L16:
+	movl	-4(%rbp), %eax
+	cmpl	-12(%rbp), %eax
+	je	.L15
+	jmp	.L17
+	jmp	.L17
+.L15:
+	movq	-4(%rbp), %rdi
+	call	printInt
+	movl	%eax, -16(%rbp)
+	movl	-16(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC30, %edi
+	call	printStr
+	movl	%eax, -20(%rbp)
+	movl	-20(%rbp), %eax
+	movl	%eax, u
+	movq	-8(%rbp), %rdi
+	call	printInt
+	movl	%eax, -24(%rbp)
+	movl	-24(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC31, %edi
+	call	printStr
+	movl	%eax, -28(%rbp)
+	movl	-28(%rbp), %eax
+	movl	%eax, u
+	movq	-12(%rbp), %rdi
+	call	printInt
+	movl	%eax, -32(%rbp)
+	movl	-32(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC32, %edi
+	call	printStr
+	movl	%eax, -36(%rbp)
+	movl	-36(%rbp), %eax
+	movl	%eax, u
+	jmp	.L17
+.L17:
+	nop
+	leave
+	.cfi_restore 5
+	.cfi_def_cfa 4, 4
+	ret
+	.cfi_endproc
+	.size	test_equality_a, .-test_equality_a
+	.globl	test_not_equality_b
+	.type	test_not_equality_b, @function
+test_not_equality_b:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 5
+	subq	$36, %rsp
+	movl	%edi, 16(%rbp)
+	movl	16(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movl	%esi, 20(%rbp)
+	movl	20(%rbp), %eax
+	movl	%eax, -8(%rbp)
+	movl	%edx, 24(%rbp)
+	movl	24(%rbp), %eax
+	movl	%eax, -12(%rbp)
+	movl	-8(%rbp), %eax
+	cmpl	-4(%rbp), %eax
+	jne	.L18
+	jmp	.L19
+.L19:
+	movl	-8(%rbp), %eax
+	cmpl	-12(%rbp), %eax
+	jne	.L18
+	jmp	.L20
+	jmp	.L20
+.L18:
+	movq	-8(%rbp), %rdi
+	call	printInt
+	movl	%eax, -16(%rbp)
+	movl	-16(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC33, %edi
+	call	printStr
+	movl	%eax, -20(%rbp)
+	movl	-20(%rbp), %eax
+	movl	%eax, u
+	movq	-4(%rbp), %rdi
+	call	printInt
+	movl	%eax, -24(%rbp)
+	movl	-24(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC34, %edi
+	call	printStr
+	movl	%eax, -28(%rbp)
+	movl	-28(%rbp), %eax
+	movl	%eax, u
+	movq	-12(%rbp), %rdi
+	call	printInt
+	movl	%eax, -32(%rbp)
+	movl	-32(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC35, %edi
+	call	printStr
+	movl	%eax, -36(%rbp)
+	movl	-36(%rbp), %eax
+	movl	%eax, u
+	jmp	.L20
+.L20:
+	nop
+	leave
+	.cfi_restore 5
+	.cfi_def_cfa 4, 4
+	ret
+	.cfi_endproc
+	.size	test_not_equality_b, .-test_not_equality_b
+	.globl	test_greater_equality_c
+	.type	test_greater_equality_c, @function
+test_greater_equality_c:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 5
+	subq	$36, %rsp
+	movl	%edi, 16(%rbp)
+	movl	16(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movl	%esi, 20(%rbp)
+	movl	20(%rbp), %eax
+	movl	%eax, -8(%rbp)
+	movl	%edx, 24(%rbp)
+	movl	24(%rbp), %eax
+	movl	%eax, -12(%rbp)
+	movl	-12(%rbp), %eax
+	cmpl	-4(%rbp), %eax
+	jge	.L21
+	jmp	.L22
+.L22:
+	movl	-4(%rbp), %eax
+	cmpl	-8(%rbp), %eax
+	jge	.L21
+	jmp	.L23
+	jmp	.L23
+.L21:
+	movq	-12(%rbp), %rdi
+	call	printInt
+	movl	%eax, -16(%rbp)
+	movl	-16(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC36, %edi
+	call	printStr
+	movl	%eax, -20(%rbp)
+	movl	-20(%rbp), %eax
+	movl	%eax, u
+	movq	-4(%rbp), %rdi
+	call	printInt
+	movl	%eax, -24(%rbp)
+	movl	-24(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC37, %edi
+	call	printStr
+	movl	%eax, -28(%rbp)
+	movl	-28(%rbp), %eax
+	movl	%eax, u
+	movq	-8(%rbp), %rdi
+	call	printInt
+	movl	%eax, -32(%rbp)
+	movl	-32(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC38, %edi
+	call	printStr
+	movl	%eax, -36(%rbp)
+	movl	-36(%rbp), %eax
+	movl	%eax, u
+	jmp	.L23
+.L23:
+	nop
+	leave
+	.cfi_restore 5
+	.cfi_def_cfa 4, 4
+	ret
+	.cfi_endproc
+	.size	test_greater_equality_c, .-test_greater_equality_c
+	.globl	test_less_equality_c
+	.type	test_less_equality_c, @function
+test_less_equality_c:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 5
+	subq	$36, %rsp
+	movl	%edi, 16(%rbp)
+	movl	16(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movl	%esi, 20(%rbp)
+	movl	20(%rbp), %eax
+	movl	%eax, -8(%rbp)
+	movl	%edx, 24(%rbp)
+	movl	24(%rbp), %eax
+	movl	%eax, -12(%rbp)
+	movl	-12(%rbp), %eax
+	cmpl	-4(%rbp), %eax
+	jle	.L24
+	jmp	.L25
+.L25:
+	movl	-12(%rbp), %eax
+	cmpl	-8(%rbp), %eax
+	jle	.L24
+	jmp	.L26
+	jmp	.L26
+.L24:
+	movq	-12(%rbp), %rdi
+	call	printInt
+	movl	%eax, -16(%rbp)
+	movl	-16(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC39, %edi
+	call	printStr
+	movl	%eax, -20(%rbp)
+	movl	-20(%rbp), %eax
+	movl	%eax, u
+	movq	-4(%rbp), %rdi
+	call	printInt
+	movl	%eax, -24(%rbp)
+	movl	-24(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC40, %edi
+	call	printStr
+	movl	%eax, -28(%rbp)
+	movl	-28(%rbp), %eax
+	movl	%eax, u
+	movq	-8(%rbp), %rdi
+	call	printInt
+	movl	%eax, -32(%rbp)
+	movl	-32(%rbp), %eax
+	movl	%eax, u
+	movl	$.LC41, %edi
+	call	printStr
+	movl	%eax, -36(%rbp)
+	movl	-36(%rbp), %eax
+	movl	%eax, u
+	jmp	.L26
+.L26:
+	nop
+	leave
+	.cfi_restore 5
+	.cfi_def_cfa 4, 4
+	ret
+	.cfi_endproc
+	.size	test_less_equality_c, .-test_less_equality_c
+	.globl	main
+	.type	main, @function
+main:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 5
+	subq	$52, %rsp
+	movl	$.LC42, %edi
+	call	printStr
+	movl	%eax, -4(%rbp)
+	movl	-4(%rbp), %eax
+	movl	%eax, u
+	leal	u, %eax
+	movl	%eax, -20(%rbp)
+	movq	-20(%rbp), %rdi
+	call	readInt
+	movl	%eax, -24(%rbp)
+	movl	-24(%rbp), %eax
+	movl	%eax, -8(%rbp)
+	movl	$.LC43, %edi
+	call	printStr
+	movl	%eax, -28(%rbp)
+	movl	-28(%rbp), %eax
+	movl	%eax, u
+	leal	u, %eax
+	movl	%eax, -32(%rbp)
+	movq	-32(%rbp), %rdi
+	call	readInt
+	movl	%eax, -36(%rbp)
+	movl	-36(%rbp), %eax
+	movl	%eax, -12(%rbp)
+	movl	$.LC44, %edi
+	call	printStr
+	movl	%eax, -40(%rbp)
+	movl	-40(%rbp), %eax
+	movl	%eax, u
+	leal	u, %eax
+	movl	%eax, -44(%rbp)
+	movq	-44(%rbp), %rdi
+	call	readInt
+	movl	%eax, -48(%rbp)
+	movl	-48(%rbp), %eax
+	movl	%eax, -16(%rbp)
+	movq	-16(%rbp), %rdx
+	movq	-12(%rbp), %rsi
+	movq	-8(%rbp), %rdi
+	call	sort
+	movq	-16(%rbp), %rdx
+	movq	-12(%rbp), %rsi
+	movq	-8(%rbp), %rdi
+	call	test_equality_a
+	movq	-16(%rbp), %rdx
+	movq	-12(%rbp), %rsi
+	movq	-8(%rbp), %rdi
+	call	test_less_equality_c
+	movq	-16(%rbp), %rdx
+	movq	-12(%rbp), %rsi
+	movq	-8(%rbp), %rdi
+	call	test_greater_equality_c
+	movq	-16(%rbp), %rdx
+	movq	-12(%rbp), %rsi
+	movq	-8(%rbp), %rdi
+	call	test_less_equality_c
+	movq	-16(%rbp), %rdx
+	movq	-12(%rbp), %rsi
+	movq	-8(%rbp), %rdi
+	call	test_not_equality_b
+	movl	$0, %eax
+	movl	%eax, -52(%rbp)
+	movl	-52(%rbp), %eax
+	leave
+	.cfi_restore 5
+	.cfi_def_cfa 4, 4
+	ret
+	.cfi_endproc
+	.size	main, .-main

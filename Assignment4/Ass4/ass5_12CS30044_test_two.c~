@@ -1,0 +1,23 @@
+/* Test for function calling and ternary expression */
+/* This includes if-else and logical expression testing too */
+double max(int x, int y);
+int main();
+double max(int x, int y) {
+       double ans;
+       ans = (x > y)? x : y;
+       return ans;
+}
+
+int main() {
+       int a, b, big;
+       a = a << 1;
+       if((a > 10) && (b == 0))
+               a = 0;
+       else
+               a = 1;
+		if(3)
+			b=1;
+
+       big = max(a, b/2);
+       return 0;
+}

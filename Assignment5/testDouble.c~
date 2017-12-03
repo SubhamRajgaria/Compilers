@@ -1,0 +1,12 @@
+int printFlt(double d);
+int printInt(int n);
+int readInt( int *n);
+int readFlt(double *f);
+int main();
+int main(){
+	int a, b, c,u;
+	double f,g,h;
+	u =printStr("Enter two integers\n");
+	
+}
+

@@ -1,0 +1,10 @@
+int readf(double *d);
+int printd(double f);
+int error;
+int main();
+int main(){
+	double c;
+	c = readf(&error);
+	int d = printd(c);
+}
+	

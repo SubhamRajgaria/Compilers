@@ -1,0 +1,114 @@
+	.section	.rodata
+.LC0:
+	.string	"\n"
+.LC1:
+	.string	"Hello\n"
+	.text
+	.globl	func
+	.type	func, @function
+func:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 5
+	subq	$32, %rsp
+	movl	%edi, 8(%rbp)
+	movl	8(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	movl	-4(%rbp), %eax
+	movl	-4(%rbp), %edi
+	call	printInt
+	movl	%eax, -16(%rbp)
+	movl	-16(%rbp), %eax
+	movl	%eax, -12(%rbp)
+	movl	$.LC0, %eax
+	movl	$.LC0, %edi
+	call	printStr
+	movl	%eax, -20(%rbp)
+	movl	-20(%rbp), %eax
+	movl	%eax, -12(%rbp)
+	movl	-8(%rbp), %eax
+	movl	-8(%rbp), %edi
+	call	printInt
+	movl	%eax, -24(%rbp)
+	movl	-24(%rbp), %eax
+	movl	%eax, -12(%rbp)
+	movl	$.LC1, %eax
+	movl	$.LC1, %edi
+	call	printStr
+	movl	%eax, -28(%rbp)
+	movl	-28(%rbp), %eax
+	movl	%eax, -12(%rbp)
+	movl	$1, %eax
+	movl	%eax, -32(%rbp)
+	movl	-32(%rbp), %eax
+	leave
+	.cfi_restore 5
+	.cfi_def_cfa 4, 4
+	ret
+	.cfi_endproc
+	.size	func, .-func
+	.globl	foo
+	.type	foo, @function
+foo:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 5
+	subq	$4, %rsp
+	movl	$1, %eax
+	movl	%eax, -4(%rbp)
+	movl	-4(%rbp), %eax
+	leave
+	.cfi_restore 5
+	.cfi_def_cfa 4, 4
+	ret
+	.cfi_endproc
+	.size	foo, .-foo
+	.globl	main
+	.type	main, @function
+main:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 5
+	subq	$36, %rsp
+	leal	-12(%rbp), %eax
+	movl	%eax, -16(%rbp)
+	movl	-16(%rbp), %eax
+	movl	-16(%rbp), %edi
+	call	readInt
+	movl	%eax, -20(%rbp)
+	movl	-20(%rbp), %eax
+	movl	%eax, -4(%rbp)
+	leal	-12(%rbp), %eax
+	movl	%eax, -24(%rbp)
+	movl	-24(%rbp), %eax
+	movl	-24(%rbp), %edi
+	call	readInt
+	movl	%eax, -28(%rbp)
+	movl	-28(%rbp), %eax
+	movl	%eax, -8(%rbp)
+	movl	-8(%rbp), %eax
+	movl	-8(%rbp), %esi
+	movl	-4(%rbp), %eax
+	movl	-4(%rbp), %edi
+	call	func
+	movl	%eax, -32(%rbp)
+	movl	-32(%rbp), %eax
+	movl	%eax, -12(%rbp)
+	movl	$0, %eax
+	movl	%eax, -36(%rbp)
+	movl	-36(%rbp), %eax
+	leave
+	.cfi_restore 5
+	.cfi_def_cfa 4, 4
+	ret
+	.cfi_endproc
+	.size	main, .-main

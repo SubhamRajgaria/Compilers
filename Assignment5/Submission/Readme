@@ -1,0 +1,12 @@
+******Compilation Instructions******************
+Run the make file- This generates the a.out file which which when given an input file generates the .s or .asm file(by default it generates .s file), quads.out can also be generated from this, for doing this uncomment the quad_array->print() line in target translator
+
+
+After this type ./compile <file name> to generate its executable and run the code
+
+***************************************************************
+
+Limitations
+1) While passing parameters to a function the passed parameter needs to be first copied in a local vraible to the function before use
+2) Function definition is important before declaring the function
+3) Matrices have not been extensively verified, the asm is getting generated but in some cases there is a segmentation fault

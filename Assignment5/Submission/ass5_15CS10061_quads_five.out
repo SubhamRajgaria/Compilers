@@ -1,0 +1,51 @@
+  0 : fib : 
+  1 : d = n
+  2 : t0 = 0
+  3 : if d == t0 goto 6
+  4 : goto 9
+  5 : goto 28
+  6 : t1 = 0
+  7 : k = t1
+  8 : goto 28
+  9 : t2 = 1
+ 10 : if d == t2 goto 13
+ 11 : goto 16
+ 12 : goto 28
+ 13 : t3 = 1
+ 14 : k = t3
+ 15 : goto 28
+ 16 : t4 = 1
+ 17 : t5 = d - t4
+ 18 : param t5
+ 19 : t6 = call fib, 1
+ 20 : a = t6
+ 21 : t7 = 2
+ 22 : t8 = d - t7
+ 23 : param t8
+ 24 : t9 = call fib, 1
+ 25 : b = t9
+ 26 : t10 = a + b
+ 27 : k = t10
+ 28 : return k
+ 29 : main : 
+ 30 : param .LC0
+ 31 : t11 = call printStr, 1
+ 32 : u = t11
+ 33 : t12 = & u
+ 34 : param t12
+ 35 : t13 = call readInt, 1
+ 36 : n = t13
+ 37 : param n
+ 38 : t14 = call fib, 1
+ 39 : res = t14
+ 40 : param .LC1
+ 41 : t15 = call printStr, 1
+ 42 : u = t15
+ 43 : param res
+ 44 : t16 = call printInt, 1
+ 45 : u = t16
+ 46 : param .LC2
+ 47 : t17 = call printStr, 1
+ 48 : u = t17
+ 49 : t18 = 0
+ 50 : return t18
